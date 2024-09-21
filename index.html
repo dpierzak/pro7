@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pro7 control panel</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container">
+    <div id="login">
+        <form id="connect" action="" method="post">
+            <label>Adres IP Pro7: <br><small>(10.50.0.85)</small></label>
+            <input id="ipaddress" data-id="ipaddress" type="text" name="ipaddress" placeholder="10.50.0.57" value="10.50.0.85" />
+            <label>Port:</label>
+            <input id="port" data-id="port" type="text" name="port" placeholder="1025" value="1025" />
+            <label>Hasło:</label>
+            <input id="passphrase" data-id="passphrase" type="password" name="passphrase" placeholder="*******" value="Syj0n123!" />
+            <button type="submit">Połącz z prezenterem</button>
+        </form>
+    </div>
+    <div id="control" class="hide">
+        <div class="btn btn--left">
+            <div class="btn--title">PREV</div>
+            <img src="svg-chevron.svg" class="chevron chevron--left" />
+        </div>
+        <div class="btn btn--right">
+            <div class="btn--title">NEXT</div>
+            <img src="svg-chevron.svg" class="chevron chevron--right" />
+        </div>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

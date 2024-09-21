@@ -1,0 +1,114 @@
+.hide {
+    display: none !important;
+}
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #34495e;
+    letter-spacing: 1.2px;
+}
+
+.container {
+    width: 300px;
+    padding: 50px 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transition: all .3s;
+}
+.container.big {
+    width: 70%;
+    transition: all .3s;
+}
+.container input, .container label {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    color: #fff;
+    outline: none;
+}
+.container input::-moz-placeholder, .container label::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.container input:-ms-input-placeholder, .container label:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.container input::placeholder, .container label::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.container label {
+    padding: 0;
+    background: none;
+    border: none;
+}
+.container label input {
+    display: inline;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+.container button, .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    background: #2c3e50;
+    border: none;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.15s ease;
+    position: relative;
+    top: 0;
+}
+.container button:hover .btn:hover {
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.container button:active {
+    top: 2px;
+}
+.container p {
+    text-align: right;
+}
+.container p a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+    transition: all 0.15s ease;
+}
+.container p a:hover {
+    color: white;
+}
+label {
+    text-align: center;
+}
+label small {
+    font-size: 0.5rem;
+}
+#control {
+    display: flex;
+}
+.btn {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
+    height: 50%;
+    min-height: 100px;
+    text-align: center;
+}
+.chevron {
+    width: 100%;
+    opacity: 0.8;
+}
+.chevron--left {
+    transform: rotate(90deg);
+}
+.chevron--right {
+    transform: rotate(-90deg);
+}
