@@ -1,0 +1,11 @@
+version: '3'
+services:
+  php:
+    image: serversideup/php:8.3.9-fpm-nginx
+    environment:
+      PHP_POST_MAX_SIZE: "500M"
+      PHP_UPLOAD_MAX_FILE_SIZE: "500M"
+    ports:
+      - 80:8080
+    volumes:
+      - ./app:/var/www/html/
