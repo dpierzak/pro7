@@ -39,6 +39,14 @@ let formData = {
             alert('changed')
         }
     })
+    document.querySelector('.btn--status').addEventListener('click', () => {
+        console.log('next')
+        response = ajaxCall(formData.ip,formData.port,'healthcheck','')
+        document.querySelector('.status').innerHTML = response;
+        if(response === 'Authorized'){
+            alert('changed')
+        }
+    })
 
 
 

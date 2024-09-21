@@ -91,7 +91,8 @@ label {
 label small {
     font-size: 0.5rem;
 }
-#control {
+.btn--container {
+    margin-top: 30px;
     display: flex;
 }
 .btn {
@@ -111,4 +112,22 @@ label small {
 }
 .chevron--right {
     transform: rotate(-90deg);
+}
+.btn--status {
+    height: 1rem;
+    width: 91.5%;
+    max-height: 20px;
+    min-height: 0;
+}
+
+.status--content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(255,255,255,0.1);
+    color: #ffffff;
+    font-size: .5em;
+    font-style: italic;
+    font-weight: normal;
+    overflow-wrap: break-word;
 }

@@ -21,15 +21,22 @@
         </form>
     </div>
     <div id="control" class="hide">
-        <div class="btn btn--left">
-            <div class="btn--title">PREV</div>
-            <img src="svg-chevron.svg" class="chevron chevron--left" />
+        <div class="btn--container">
+            <div class="btn btn--left">
+                <div class="btn--title">PREV</div>
+                <img src="svg-chevron.svg" class="chevron chevron--left" />
+            </div>
+            <div class="btn btn--right">
+                <div class="btn--title">NEXT</div>
+                <img src="svg-chevron.svg" class="chevron chevron--right" />
+            </div>
         </div>
-        <div class="btn btn--right">
-            <div class="btn--title">NEXT</div>
-            <img src="svg-chevron.svg" class="chevron chevron--right" />
+        <div class="btn btn--status">
+            <div class="btn--title">status</div>
         </div>
     </div>
+    <div class="status--content"><strong>Response:</strong><br>
+    <span class="status"></span></div>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
